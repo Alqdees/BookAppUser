@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.alqdees.bookapp-mergeReleaseResources-34:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

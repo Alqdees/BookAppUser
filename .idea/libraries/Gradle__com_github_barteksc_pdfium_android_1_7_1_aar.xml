@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.barteksc:pdfium-android:1.7.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a8fb37ab09d79778e5cefa3486a8c56/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/accece203fa5e86dcf3e22f88f4d31ff/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/accece203fa5e86dcf3e22f88f4d31ff/transformed/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/accece203fa5e86dcf3e22f88f4d31ff/transformed/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e270f2361a327b7b1d3bf8be10e59583/transformed/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e270f2361a327b7b1d3bf8be10e59583/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e270f2361a327b7b1d3bf8be10e59583/transformed/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-all/caches/transforms-3/b75d27d9d8cc5719fd09743aecf80c5d/transformed/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-all/caches/transforms-3/b75d27d9d8cc5719fd09743aecf80c5d/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-all/caches/transforms-3/b75d27d9d8cc5719fd09743aecf80c5d/transformed/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2b91bfc4ec6226b551d31244c1cbca94/transformed/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b91bfc4ec6226b551d31244c1cbca94/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b91bfc4ec6226b551d31244c1cbca94/transformed/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/39db762422c8b838fa37fa525a35c8ab/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ee4330bbdd6826ad487bc15ea1ace9b/transformed/jetified-pdfium-android-1.7.1/res" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/caches/transforms-3/865e19977f34ae017114e4b6a3a59169/transformed/jetified-pdfium-android-1.7.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/caches/transforms-3/865e19977f34ae017114e4b6a3a59169/transformed/jetified-pdfium-android-1.7.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/caches/transforms-3/865e19977f34ae017114e4b6a3a59169/transformed/jetified-pdfium-android-1.7.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-all/caches/modules-2/files-2.1/com.github.barteksc/pdfium-android/1.7.1/89b2c068c8fd5c088f1edbcab0fade1fe377865b/pdfium-android-1.7.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/caches/modules-2/files-2.1/com.github.barteksc/pdfium-android/1.7.1/89b2c068c8fd5c088f1edbcab0fade1fe377865b/pdfium-android-1.7.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-all/caches/modules-2/files-2.1/com.github.barteksc/pdfium-android/1.7.1/873c2791c515aa5748446911798f9a118092d8f8/pdfium-android-1.7.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-7.0.2-all/caches/modules-2/files-2.1/com.github.barteksc/pdfium-android/1.7.1/873c2791c515aa5748446911798f9a118092d8f8/pdfium-android-1.7.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
