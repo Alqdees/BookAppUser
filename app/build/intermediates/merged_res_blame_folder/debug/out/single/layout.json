@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.alqdees.bookapp-mergeDebugResources-35:/layout/activity_download.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_download.xml"
+    },
+    {
         "merged": "com.alqdees.bookapp-mergeDebugResources-35:/layout/fragment_book_user.xml",
         "source": "com.alqdees.bookapp-main-38:/layout/fragment_book_user.xml"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "com.alqdees.bookapp-mergeDebugResources-35:/layout/activity_splash.xml",
         "source": "com.alqdees.bookapp-main-38:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeDebugResources-35:/layout/downloadcards.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/downloadcards.xml"
     },
     {
         "merged": "com.alqdees.bookapp-mergeDebugResources-35:/layout/activity_pdf_edit.xml",

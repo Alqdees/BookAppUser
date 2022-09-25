@@ -18,8 +18,6 @@ import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.Toast;
-
-import com.alqdees.bookapp.BuildConfig;
 import com.alqdees.bookapp.Constants.MyApplication;
 import com.alqdees.bookapp.R;
 import com.alqdees.bookapp.databinding.ActivityPdfDetailBinding;
@@ -29,7 +27,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
+import com.google.firebase.installations.BuildConfig;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Locale;
@@ -82,7 +80,7 @@ public class PdfDetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
                         !Environment.isExternalStorageManager()) {
-                    Uri uri = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
+                    Uri uri = Uri.fromParts("package:",getPackageName(),null);
                     startActivity(new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION,
                             uri));
                     try {

@@ -8,6 +8,10 @@
         "source": "com.alqdees.bookapp-main-38:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
+        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_download.xml.flat",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_download.xml"
+    },
+    {
         "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_person.xml.flat",
         "source": "com.alqdees.bookapp-main-38:/drawable/ic_person.xml"
     },
@@ -198,6 +202,10 @@
     {
         "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "com.alqdees.bookapp-main-38:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.alqdees.bookapp-merged_res-36:/layout_downloadcards.xml.flat",
+        "source": "com.alqdees.bookapp-main-38:/layout/downloadcards.xml"
     },
     {
         "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",

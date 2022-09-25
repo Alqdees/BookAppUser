@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
 MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\9f1a51ab804f51c0825aca1d84c67e6f\transformed\jetified-viewbinding-7.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -79,22 +79,22 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\msi\.gradle\wrap
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\c45e2920cb3e37029c5674265eac3a07\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\8c1f22cdc49f0944a453222e80276d64\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\823ed338d9e1ef38d7bab07ea632b39a\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
-INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-70:12
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -119,17 +119,17 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:
 	android:name
 		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:7:5-8:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:7:5-9:40
 	tools:ignore
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:8:9-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:9:9-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:8:9-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:10:22-77
 application
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:11:5-68:19
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:12:5-72:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\ce02f3f7664ba9eb629fc57f47e65fc3\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\fae15a032f7194e43b6919feca645684\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -185,117 +185,123 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\msi\.gradle\wrappe
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\4073ab3e820681ca8f60de7aed1ad955\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:requestLegacyExternalStorage
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:17:9-52
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:18:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:17:9-41
 	android:hardwareAccelerated
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:15:9-43
 	tools:ignore
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:22:9-39
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:23:9-39
 	android:roundIcon
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:20:9-74
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:21:9-74
 	android:usesCleartextTraffic
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:21:9-44
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:22:9-44
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:12:9-48
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:13:9-48
+activity#com.alqdees.bookapp.Activitys.DownloadActivity
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:25:13-55
 activity#com.alqdees.bookapp.Activitys.ProfileActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:24:13-54
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:28:13-54
 activity#com.alqdees.bookapp.Activitys.PdfViewActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:27:13-54
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:31:13-54
 activity#com.alqdees.bookapp.Activitys.PdfDetailActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:29:9-31:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:30:13-56
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:34:13-56
 activity#com.alqdees.bookapp.Activitys.PdfEditActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:32:9-34:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:33:13-54
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:37:13-54
 activity#com.alqdees.bookapp.Activitys.PdfListAdminActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:36:13-59
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:40:13-59
 activity#com.alqdees.bookapp.Activitys.PdfAddActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:39:13-53
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:43:13-53
 activity#com.alqdees.bookapp.Activitys.CategoryAddActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:45:9-47:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:42:13-58
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:46:13-58
 activity#com.alqdees.bookapp.Activitys.DashboardAdminActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:44:9-46:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:48:9-50:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:45:13-61
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:49:13-61
 activity#com.alqdees.bookapp.Activitys.DashboardActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:47:9-49:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:51:9-53:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:48:13-56
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:52:13-56
 activity#com.alqdees.bookapp.Activitys.LoginActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:50:9-52:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:54:9-56:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:51:13-52
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:55:13-52
 activity#com.alqdees.bookapp.Activitys.RegisterActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:53:9-55:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:57:9-59:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:54:13-55
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:58:13-55
 activity#com.alqdees.bookapp.Activitys.MainActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:56:9-58:40
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:60:9-62:40
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:57:13-51
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:61:13-51
 activity#com.alqdees.bookapp.Activitys.SplashActivity
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:59:9-67:20
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:63:9-71:20
 	android:exported
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:61:13-36
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:65:13-36
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:60:13-53
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:64:13-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:62:13-66:29
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:66:13-70:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:63:17-69
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:67:17-69
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:63:25-66
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:67:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:65:17-77
+ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:69:17-77
 	android:name
-		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:65:27-74
+		ADDED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml:69:27-74
 uses-sdk
 INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\msi\StudioProjects\BookApp\app\src\main\AndroidManifest.xml

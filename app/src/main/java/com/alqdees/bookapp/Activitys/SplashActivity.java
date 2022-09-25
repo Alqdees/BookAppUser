@@ -1,37 +1,47 @@
 package com.alqdees.bookapp.Activitys;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.utils.widget.MotionButton;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.widget.Toast;
+import android.view.View;
 
 import com.alqdees.bookapp.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
+
 
 public class SplashActivity extends AppCompatActivity {
-    private FirebaseAuth firebaseAuth;
+//    private FirebaseAuth firebaseAuth;
+    private MotionButton allBook,download;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        firebaseAuth = FirebaseAuth.getInstance();
-
-        new Handler().postDelayed(new Runnable() {
+//        firebaseAuth = FirebaseAuth.getInstance();
+        allBook = findViewById(R.id.allBook);
+        download = findViewById(R.id.downLoad);
+        allBook.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                checkUser();
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this,DashboardActivity.class));
             }
-        },3000);
+        });
+        download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SplashActivity.this,DownloadActivity.class));
+            }
+        });
+
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                checkUser();
+//            }
+//        },3000);
     }
 
     private void checkUser() {

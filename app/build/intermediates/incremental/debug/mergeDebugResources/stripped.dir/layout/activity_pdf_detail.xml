@@ -47,11 +47,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/table"
+                android:padding="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -268,7 +269,7 @@
                 android:padding="5dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck,TextViewEdits" />
         </LinearLayout>
     </ScrollView>
     <LinearLayout
@@ -277,6 +278,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="5dp"
+        android:background="@color/gray3"
         android:layout_alignParentBottom="true">
 
         <Button
@@ -312,7 +314,7 @@
             android:background="@android:color/transparent"
             android:text="المفضلة"
             android:textColor="@color/btn"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
             android:drawableTop="@drawable/ic_favorite_white"/>

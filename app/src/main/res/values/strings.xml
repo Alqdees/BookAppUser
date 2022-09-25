@@ -8,4 +8,7 @@
     <string name="nn">+ أضافة فئة</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_All_book">الذهاب الى جميع الكتب</string>
+    <string name="go_to_books_download">الذهاب الى الكتب المنزلة</string>
+    <string name="Book_downloaded">كتب تم تحميلها</string>
 </resources>

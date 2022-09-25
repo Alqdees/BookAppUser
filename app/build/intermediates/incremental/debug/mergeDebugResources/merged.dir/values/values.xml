@@ -1595,6 +1595,7 @@
     <item quantity="one"><ns2:g id="count">%d</ns2:g> new notification</item>
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
+    <string name="Book_downloaded">كتب تم تحميلها</string>
     <string name="Signup">مستخدم جديد؟ سجل</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -1663,6 +1664,8 @@
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="gcm_defaultSenderId" translatable="false">172458143022</string>
+    <string name="go_to_All_book">الذهاب الى جميع الكتب</string>
+    <string name="go_to_books_download">الذهاب الى الكتب المنزلة</string>
     <string name="google_api_key" translatable="false">AIzaSyDaPjHbClYVknn1cgd4HfgU1sQByYZyUHE</string>
     <string name="google_app_id" translatable="false">1:172458143022:android:d866aa53961d89cda9debf</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDaPjHbClYVknn1cgd4HfgU1sQByYZyUHE</string>

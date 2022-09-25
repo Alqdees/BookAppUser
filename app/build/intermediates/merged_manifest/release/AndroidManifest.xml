@@ -29,6 +29,9 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.alqdees.bookapp.Activitys.DownloadActivity"
+            android:exported="false" />
+        <activity
             android:name="com.alqdees.bookapp.Activitys.ProfileActivity"
             android:exported="false" />
         <activity

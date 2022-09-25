@@ -8,8 +8,16 @@
         "source": "com.alqdees.bookapp-main-37:/layout/activity_dashboard_admin.xml"
     },
     {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-35:/layout/downloadcards.xml",
+        "source": "com.alqdees.bookapp-main-37:/layout/downloadcards.xml"
+    },
+    {
         "merged": "com.alqdees.bookapp-mergeReleaseResources-35:/layout/activity_login.xml",
         "source": "com.alqdees.bookapp-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-35:/layout/activity_download.xml",
+        "source": "com.alqdees.bookapp-main-37:/layout/activity_download.xml"
     },
     {
         "merged": "com.alqdees.bookapp-mergeReleaseResources-35:/layout/activity_profile.xml",

@@ -9,10 +9,8 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.alqdees.bookapp.Activitys.PdfDetailActivity;
 import com.alqdees.bookapp.Filter.FilterPdfUser;
 import com.alqdees.bookapp.Model.ModelPdf;
