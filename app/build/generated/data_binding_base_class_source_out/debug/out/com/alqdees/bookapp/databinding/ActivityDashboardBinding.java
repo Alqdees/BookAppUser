@@ -8,11 +8,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import androidx.viewpager.widget.ViewPager;
 import com.alqdees.bookapp.R;
-import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,7 +21,7 @@ public final class ActivityDashboardBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TabLayout tableLayout;
+  public final RecyclerView recyclerview;
 
   @NonNull
   public final RelativeLayout toolbarRl;
@@ -30,16 +29,13 @@ public final class ActivityDashboardBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
-  @NonNull
-  public final ViewPager viewPager;
-
-  private ActivityDashboardBinding(@NonNull RelativeLayout rootView, @NonNull TabLayout tableLayout,
-      @NonNull RelativeLayout toolbarRl, @NonNull TextView tvTitle, @NonNull ViewPager viewPager) {
+  private ActivityDashboardBinding(@NonNull RelativeLayout rootView,
+      @NonNull RecyclerView recyclerview, @NonNull RelativeLayout toolbarRl,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.tableLayout = tableLayout;
+    this.recyclerview = recyclerview;
     this.toolbarRl = toolbarRl;
     this.tvTitle = tvTitle;
-    this.viewPager = viewPager;
   }
 
   @Override
@@ -69,9 +65,9 @@ public final class ActivityDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.tableLayout;
-      TabLayout tableLayout = ViewBindings.findChildViewById(rootView, id);
-      if (tableLayout == null) {
+      id = R.id.recyclerview;
+      RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerview == null) {
         break missingId;
       }
 
@@ -87,14 +83,8 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.viewPager;
-      ViewPager viewPager = ViewBindings.findChildViewById(rootView, id);
-      if (viewPager == null) {
-        break missingId;
-      }
-
-      return new ActivityDashboardBinding((RelativeLayout) rootView, tableLayout, toolbarRl,
-          tvTitle, viewPager);
+      return new ActivityDashboardBinding((RelativeLayout) rootView, recyclerview, toolbarRl,
+          tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

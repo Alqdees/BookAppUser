@@ -46,9 +46,7 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
     @Override
     public HolderCategory onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         binding = RowCategoryBinding.inflate(LayoutInflater.from(context),parent,false);
-
         return new HolderCategory(binding.getRoot());
-//        return new HolderCategory(LayoutInflater.from(parent.getContext()).inflate(R.layout.row_category,parent,false));
     }
 
     @Override
@@ -60,25 +58,7 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
         String timestamp = model.getTimestamp();
 
         holder.catTv.setText(category);
-        holder.imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("حذف").setMessage("هل انت متأكد من حذف الفئة")
-                        .setPositiveButton("تأكيد", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(context, "جاري الحذف", Toast.LENGTH_SHORT).show();
-                        deleteCategory(model,holder);
-                    }
-                }).setNegativeButton("ألغاء", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                }).show();
-            }
-        });
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,22 +71,6 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
 
     }
 
-    private void deleteCategory(ModelCategory model, HolderCategory holder) {
-        String id =model.getId();
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
-        ref.child(id).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-
-                Toast.makeText(context, "تم الحذف", Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
     @Override
     public int getItemCount() {
@@ -124,13 +88,12 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
     class HolderCategory extends RecyclerView.ViewHolder{
 
         TextView catTv;
-        ImageButton imageButton;
+
 
         public HolderCategory(@NonNull View itemView) {
 
             super(itemView);
             catTv = binding.categoryTv;
-            imageButton = binding.deleteBtn;
         }
     }
 }

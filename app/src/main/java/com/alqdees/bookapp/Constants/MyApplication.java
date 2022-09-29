@@ -179,7 +179,7 @@ public class MyApplication extends Application {
     }
 
 
-    public static void loadCategory(String categoryId ,TextView categoryTv) {
+    public static void loadCategory(String categoryId ) {
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
 
@@ -190,7 +190,7 @@ public class MyApplication extends Application {
 
                 String category = ""+snapshot.child("category").getValue();
 
-                categoryTv.setText(category);
+//                categoryTv.setText(category);
 
             }
 
@@ -286,9 +286,8 @@ public class MyApplication extends Application {
     {
         try{
             File folder = new File(Environment.getExternalStorageDirectory() + "/" + "كتب مدرسية");
-            boolean isFolderCreate = false;
             if (!folder.exists()) {
-                isFolderCreate = folder.mkdir();
+              folder.mkdir();
             }
             String filePathAndName = folder.toString() + "/" + name;
             FileOutputStream out = new FileOutputStream(filePathAndName);

@@ -56,31 +56,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <RelativeLayout
-                    android:id="@+id/im_view"
-                    android:layout_width="130dp"
-                    android:layout_height="170dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@color/gray1">
-
-                    <com.github.barteksc.pdfviewer.PDFView
-                        android:id="@+id/pdfViewer"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                    <ProgressBar
-                        android:id="@+id/progressBar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-
-                </RelativeLayout>
-
                 <TextView
                     android:id="@+id/titleTv"
                     style="@style/TextAppearance.MaterialComponents.Headline6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/im_view"
                     android:background="@color/gray3"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
@@ -89,38 +69,7 @@
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/titleTv"
-                    android:layout_toEndOf="@+id/im_view">
-
-                    <TableRow>
-
-                        <TextView
-                            android:id="@+id/LabelTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:text=": الفئة"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/categoryTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:layout_weight="1"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-
-                    </TableRow>
-
-
+                    android:layout_below="@+id/titleTv">
                     <TableRow>
 
                         <TextView
@@ -143,33 +92,6 @@
                             android:background="@color/gray3"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:id="@+id/sizeLabelTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:text=": الحجم"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/sizeTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:layout_weight="1"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-
                             android:textColor="@color/black"
                             android:textSize="18sp" />
                     </TableRow>
@@ -228,33 +150,6 @@
                             android:textSize="18sp" />
                     </TableRow>
 
-                    <TableRow>
-
-                        <TextView
-                            android:id="@+id/pageLab"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:text=": الصفحات"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/pageTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:layout_weight="1"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                    </TableRow>
-
-
                 </TableLayout>
             </RelativeLayout>
 
@@ -305,19 +200,6 @@
             android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/favoriteBtn"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:text="المفضلة"
-            android:textColor="@color/btn"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:drawableTop="@drawable/ic_favorite_white"/>
 
     </LinearLayout>
 </RelativeLayout>

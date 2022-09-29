@@ -1,15 +1,20 @@
 package com.alqdees.bookapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.alqdees.bookapp.Activitys.PdfViewActivity;
+import com.alqdees.bookapp.Activitys.ReadPdfActivity;
 import com.alqdees.bookapp.R;
 import com.github.barteksc.pdfviewer.PDFView;
 import java.io.File;
+import java.util.Arrays;
 
 public class AdapterDownload extends RecyclerView.Adapter<AdapterDownload.Holder> {
     private File[] files;
@@ -31,8 +36,17 @@ public class AdapterDownload extends RecyclerView.Adapter<AdapterDownload.Holder
 
         File file = files[position];
         String name = file.getName();
+
         holder.tv_name.setText(name);
         holder.pdfView.fromFile(file).load();
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, PdfViewActivity.class);
+                i.putExtra("bookTitle",name);
+                context.startActivity(i);
+            }
+        });
 
     }
 

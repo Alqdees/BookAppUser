@@ -4,9 +4,6 @@ package com.alqdees.bookapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +11,6 @@ import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.alqdees.bookapp.R;
-import com.github.barteksc.pdfviewer.PDFView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,45 +20,19 @@ public final class RowPdfAdminBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView categoryTv;
-
-  @NonNull
   public final TextView dateTv;
 
   @NonNull
   public final TextView descriptionTv;
 
   @NonNull
-  public final ImageButton moreBtn;
-
-  @NonNull
-  public final RelativeLayout pdfRl;
-
-  @NonNull
-  public final PDFView pdfViewer;
-
-  @NonNull
-  public final ProgressBar progressBsr;
-
-  @NonNull
-  public final TextView sizeTv;
-
-  @NonNull
   public final TextView titleTv;
 
-  private RowPdfAdminBinding(@NonNull CardView rootView, @NonNull TextView categoryTv,
-      @NonNull TextView dateTv, @NonNull TextView descriptionTv, @NonNull ImageButton moreBtn,
-      @NonNull RelativeLayout pdfRl, @NonNull PDFView pdfViewer, @NonNull ProgressBar progressBsr,
-      @NonNull TextView sizeTv, @NonNull TextView titleTv) {
+  private RowPdfAdminBinding(@NonNull CardView rootView, @NonNull TextView dateTv,
+      @NonNull TextView descriptionTv, @NonNull TextView titleTv) {
     this.rootView = rootView;
-    this.categoryTv = categoryTv;
     this.dateTv = dateTv;
     this.descriptionTv = descriptionTv;
-    this.moreBtn = moreBtn;
-    this.pdfRl = pdfRl;
-    this.pdfViewer = pdfViewer;
-    this.progressBsr = progressBsr;
-    this.sizeTv = sizeTv;
     this.titleTv = titleTv;
   }
 
@@ -93,12 +63,6 @@ public final class RowPdfAdminBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.categoryTv;
-      TextView categoryTv = ViewBindings.findChildViewById(rootView, id);
-      if (categoryTv == null) {
-        break missingId;
-      }
-
       id = R.id.dateTv;
       TextView dateTv = ViewBindings.findChildViewById(rootView, id);
       if (dateTv == null) {
@@ -111,44 +75,13 @@ public final class RowPdfAdminBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.moreBtn;
-      ImageButton moreBtn = ViewBindings.findChildViewById(rootView, id);
-      if (moreBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.pdfRl;
-      RelativeLayout pdfRl = ViewBindings.findChildViewById(rootView, id);
-      if (pdfRl == null) {
-        break missingId;
-      }
-
-      id = R.id.pdfViewer;
-      PDFView pdfViewer = ViewBindings.findChildViewById(rootView, id);
-      if (pdfViewer == null) {
-        break missingId;
-      }
-
-      id = R.id.progressBsr;
-      ProgressBar progressBsr = ViewBindings.findChildViewById(rootView, id);
-      if (progressBsr == null) {
-        break missingId;
-      }
-
-      id = R.id.sizeTv;
-      TextView sizeTv = ViewBindings.findChildViewById(rootView, id);
-      if (sizeTv == null) {
-        break missingId;
-      }
-
       id = R.id.titleTv;
       TextView titleTv = ViewBindings.findChildViewById(rootView, id);
       if (titleTv == null) {
         break missingId;
       }
 
-      return new RowPdfAdminBinding((CardView) rootView, categoryTv, dateTv, descriptionTv, moreBtn,
-          pdfRl, pdfViewer, progressBsr, sizeTv, titleTv);
+      return new RowPdfAdminBinding((CardView) rootView, dateTv, descriptionTv, titleTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

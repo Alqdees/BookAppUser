@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.alqdees.bookapp.Adapter.AdapterPdfAdmin;
 import com.alqdees.bookapp.Model.ModelPdf;
@@ -45,11 +47,9 @@ public class PdfListAdminActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                try {
-                    adapter.getFilter().filter(charSequence);
-                }catch (Exception e){
 
-                }
+                    search(String.valueOf(charSequence));
+//                    adapter.getFilter().filter(charSequence);
             }
 
             @Override
@@ -64,6 +64,17 @@ public class PdfListAdminActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+    }
+
+    private void search(String s) {
+        ArrayList<ModelPdf> modelPdfs = new ArrayList<>();
+        for (ModelPdf pdf: pdfArrayList) {
+            if (pdf.getTitle().contains(s)){
+                modelPdfs.add(pdf);
+            }
+        }
+        adapter = new AdapterPdfAdmin(PdfListAdminActivity.this,modelPdfs);
+        binding.bookRv.setAdapter(adapter);
     }
 
     private void loadPdfList() {
@@ -83,8 +94,12 @@ public class PdfListAdminActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Toast.makeText(
+                        PdfListAdminActivity.this
+                        , error.getMessage()
+                        , Toast.LENGTH_SHORT).show();
             }
         });
     }
+
 }

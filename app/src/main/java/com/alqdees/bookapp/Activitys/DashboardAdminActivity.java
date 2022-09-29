@@ -34,8 +34,8 @@ public class DashboardAdminActivity extends AppCompatActivity {
         binding = ActivityDashboardAdminBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         firebaseAuth = FirebaseAuth.getInstance();
-        checkUser();
-        loadCategories();
+//        checkUser();
+//        loadCategories();
 
         binding.searchEt.addTextChangedListener(new TextWatcher() {
             @Override
@@ -48,10 +48,11 @@ public class DashboardAdminActivity extends AppCompatActivity {
 
                 try {
                     adapterCategory.getFilter().filter(charSequence);
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.getMessage();
                 }
             }
+
             @Override
             public void afterTextChanged(Editable editable) {
 
@@ -62,64 +63,65 @@ public class DashboardAdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 firebaseAuth.signOut();
-                checkUser();
+//                checkUser();
             }
         });
 
         binding.addCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DashboardAdminActivity.this, CategoryAddActivity.class));
+//                startActivity(new Intent(DashboardAdminActivity.this, CategoryAddActivity.class));
 
             }
         });
         binding.addPdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startActivity(new Intent(DashboardAdminActivity.this,PdfAddActivity.class));
+                startActivity(new Intent(DashboardAdminActivity.this, PdfAddActivity.class));
             }
         });
 
-        binding.profileBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(DashboardAdminActivity.this,ProfileActivity.class));
-            }
-        });
-    }
-    private void loadCategories() {
-        categoryArrayList = new ArrayList<>();
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        ref.addValueEventListener(new ValueEventListener() {
-            @SuppressLint("NotifyDataSetChanged")
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                categoryArrayList.clear();
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                   ModelCategory model = dataSnapshot.getValue(ModelCategory.class);
-                    categoryArrayList.add(model);
-                }
-                adapterCategory = new AdapterCategory(DashboardAdminActivity.this,categoryArrayList);
-                binding.categoryRecyclerView.setAdapter(adapterCategory);
-                adapterCategory.notifyDataSetChanged();
-
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-    private void checkUser() {
-
-        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        if (firebaseUser == null){
-            startActivity(new Intent(DashboardAdminActivity.this,MainActivity.class));
-            finish();
-        }else{
-            String email =firebaseUser.getEmail();
-            binding.tvSubtitle.setText(email);
-        }
+//        binding.profileBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(DashboardAdminActivity.this,ProfileActivity.class));
+//            }
+//        });
+//    }
+//    private void loadCategories() {
+//        categoryArrayList = new ArrayList<>();
+//        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        ref.addValueEventListener(new ValueEventListener() {
+//            @SuppressLint("NotifyDataSetChanged")
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                categoryArrayList.clear();
+//                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+//                   ModelCategory model = dataSnapshot.getValue(ModelCategory.class);
+//                    categoryArrayList.add(model);
+//                }
+//                adapterCategory = new AdapterCategory(DashboardAdminActivity.this,categoryArrayList);
+//                binding.categoryRecyclerView.setAdapter(adapterCategory);
+//                adapterCategory.notifyDataSetChanged();
+//
+//            }
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//    }
+//    private void checkUser() {
+//
+//        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+//        if (firebaseUser == null){
+//            startActivity(new Intent(DashboardAdminActivity.this,MainActivity.class));
+//            finish();
+//        }else{
+//            String email =firebaseUser.getEmail();
+//            binding.tvSubtitle.setText(email);
+//        }
+//    }
     }
 }

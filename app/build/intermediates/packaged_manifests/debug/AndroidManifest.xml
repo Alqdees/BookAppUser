@@ -9,8 +9,11 @@
         android:targetSdkVersion="32" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
@@ -31,10 +34,10 @@
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.alqdees.bookapp.Activitys.DownloadActivity"
+            android:name="com.alqdees.bookapp.Activitys.ReadPdfActivity"
             android:exported="false" />
         <activity
-            android:name="com.alqdees.bookapp.Activitys.ProfileActivity"
+            android:name="com.alqdees.bookapp.Activitys.DownloadActivity"
             android:exported="false" />
         <activity
             android:name="com.alqdees.bookapp.Activitys.PdfViewActivity"
@@ -43,28 +46,16 @@
             android:name="com.alqdees.bookapp.Activitys.PdfDetailActivity"
             android:exported="false" />
         <activity
-            android:name="com.alqdees.bookapp.Activitys.PdfEditActivity"
-            android:exported="false" />
-        <activity
             android:name="com.alqdees.bookapp.Activitys.PdfListAdminActivity"
             android:exported="false" />
         <activity
             android:name="com.alqdees.bookapp.Activitys.PdfAddActivity"
             android:exported="false" />
         <activity
-            android:name="com.alqdees.bookapp.Activitys.CategoryAddActivity"
-            android:exported="false" />
-        <activity
             android:name="com.alqdees.bookapp.Activitys.DashboardAdminActivity"
             android:exported="false" />
         <activity
             android:name="com.alqdees.bookapp.Activitys.DashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.alqdees.bookapp.Activitys.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.alqdees.bookapp.Activitys.RegisterActivity"
             android:exported="false" />
         <activity
             android:name="com.alqdees.bookapp.Activitys.MainActivity"

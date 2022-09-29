@@ -4,7 +4,6 @@ package com.alqdees.bookapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,14 +22,9 @@ public final class RowCategoryBinding implements ViewBinding {
   @NonNull
   public final TextView categoryTv;
 
-  @NonNull
-  public final ImageButton deleteBtn;
-
-  private RowCategoryBinding(@NonNull CardView rootView, @NonNull TextView categoryTv,
-      @NonNull ImageButton deleteBtn) {
+  private RowCategoryBinding(@NonNull CardView rootView, @NonNull TextView categoryTv) {
     this.rootView = rootView;
     this.categoryTv = categoryTv;
-    this.deleteBtn = deleteBtn;
   }
 
   @Override
@@ -66,13 +60,7 @@ public final class RowCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.deleteBtn;
-      ImageButton deleteBtn = ViewBindings.findChildViewById(rootView, id);
-      if (deleteBtn == null) {
-        break missingId;
-      }
-
-      return new RowCategoryBinding((CardView) rootView, categoryTv, deleteBtn);
+      return new RowCategoryBinding((CardView) rootView, categoryTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

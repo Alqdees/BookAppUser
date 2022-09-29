@@ -55,9 +55,9 @@ public class AdapterPdfUser extends RecyclerView.Adapter<AdapterPdfUser.HolderPd
         holder.dateTv.setText(date);
         holder.titleTv.setText(title);
         holder.description.setText(description);
-        MyApplication.loadPdfFromUrlSinglePage(""+pdfUrl,holder.pdfView,holder.progressBar,null);
-        MyApplication.loadCategory(""+categoryId,holder.categoryTv);
-        MyApplication.loadPdfSize(""+pdfUrl,binding.sizeTv);
+//        MyApplication.loadPdfFromUrlSinglePage(""+pdfUrl,holder.pdfView,holder.progressBar,null);
+        MyApplication.loadCategory(""+categoryId);
+//        MyApplication.loadPdfSize(""+pdfUrl,binding.sizeTv);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,7 +85,7 @@ public class AdapterPdfUser extends RecyclerView.Adapter<AdapterPdfUser.HolderPd
 
     class HolderPdfUser extends RecyclerView.ViewHolder{
         TextView titleTv,description,categoryTv,dateTv,sizeTv;
-        PDFView pdfView;
+//        PDFView pdfView;
         ProgressBar progressBar;
         public HolderPdfUser(@NonNull View itemView) {
             super(itemView);
@@ -94,7 +94,7 @@ public class AdapterPdfUser extends RecyclerView.Adapter<AdapterPdfUser.HolderPd
             categoryTv = binding.categoryTv;
             dateTv = binding.dateTv;
             sizeTv = binding.sizeTv;
-            pdfView = binding.pdfViewer;
+//            pdfView = binding.pdfViewer;
             progressBar = binding.progressBsr;
 
         }
