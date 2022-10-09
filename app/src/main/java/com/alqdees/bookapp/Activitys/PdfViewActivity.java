@@ -2,6 +2,7 @@ package com.alqdees.bookapp.Activitys;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import com.alqdees.bookapp.Constants.Constants;
-import com.alqdees.bookapp.Constants.MyApplication;
 import com.alqdees.bookapp.databinding.ActivityPdfViewBinding;
-import com.github.barteksc.pdfviewer.listener.OnErrorListener;
-import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
 import com.github.barteksc.pdfviewer.listener.OnPageErrorListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,32 +23,32 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.Objects;
+import java.net.MalformedURLException;
+
 
 public class PdfViewActivity extends AppCompatActivity {
     private ActivityPdfViewBinding binding;
     private String pdfId,bookTitle;
+    private int currentPage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityPdfViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         Intent intent = getIntent();
         pdfId = intent.getStringExtra("bookId");
         bookTitle = intent.getStringExtra("bookTitle");
-        Log.d("BookTitle",bookTitle);
-        try {
-            checkFolder();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        loadBookDetails();
 
         binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,13 +56,39 @@ public class PdfViewActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+        Dexter.withContext(this).withPermission(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new PermissionListener() {
+            @Override
+            public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
+                try {
+                    checkFolder();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
+                if (permissionDeniedResponse.isPermanentlyDenied()){
+                    Toast.makeText(PdfViewActivity.this,
+                            permissionDeniedResponse.getPermissionName(),
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest,
+                                                           PermissionToken permissionToken) {
+                permissionToken.continuePermissionRequest();
+
+            }
+        }).check();
     }
     private void checkFolder() throws IOException {
 
         File folder = new File(Environment.getExternalStorageDirectory() + "/" + "كتب مدرسية");
         if (folder.exists()) {
 
-                if (checkFile().isFile()){
+                if (checkFile().exists()){
                     Log.d("GETNANE1",checkFile().toString());
                     readPdf(checkFile());
                 }else {
@@ -91,14 +115,15 @@ public class PdfViewActivity extends AppCompatActivity {
     }
 
     private void readPdf(File file) {
-//        Log.d("FILE",file.getName());
+        Log.d("FILE",file.getName());
 //       binding.pdfViewer.fromFile(file).load();
             binding.pdfViewer.fromFile(file).swipeHorizontal(false).onPageChange(new OnPageChangeListener() {
                 @SuppressLint("SetTextI18n")
                 @Override
                 public void onPageChanged(int page, int pageCount) {
-                    int currentPage = (page + 1);
-                    binding.PageTv.setText(currentPage + "/"+pageCount);
+
+                        currentPage = (page + 1) ;
+                        binding.PageTv.setText(currentPage + "/"+pageCount);
                 }
             }).onPageError(new OnPageErrorListener() {
                 @Override
@@ -113,8 +138,13 @@ public class PdfViewActivity extends AppCompatActivity {
         ref.child(pdfId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String pdfUrl = Objects.requireNonNull(snapshot.child("url").getValue()).toString();
-                loadBookFromUrl(pdfUrl);
+                String pdfUrl = snapshot.child("url").getValue().toString();
+                Log.d("TAG",pdfUrl);
+                try {
+                    loadBookFromUrl(pdfUrl);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -122,48 +152,39 @@ public class PdfViewActivity extends AppCompatActivity {
             }
         });
     }
-    private void loadBookFromUrl(String pdfUrl) {
+    private void loadBookFromUrl(String pdfUrl) throws MalformedURLException {
         StorageReference ref = FirebaseStorage.getInstance().getReferenceFromUrl(pdfUrl);
         ref.getBytes(Constants.MAX_BYTES_PDF).addOnSuccessListener(new OnSuccessListener<byte[]>() {
             @Override
             public void onSuccess(byte[] bytes) {
                 binding.pdfViewer.fromBytes(bytes).swipeHorizontal(false).onPageChange(new OnPageChangeListener() {
-                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onPageChanged(int page, int pageCount) {
                         int currentPage = (page + 1);
                         binding.PageTv.setText(currentPage + "/"+pageCount);
-//                        MyApplication.down;
+                        binding.progressBar.setVisibility(View.GONE);
                     }
-                }).onError(new OnErrorListener() {
+                }).onPageError(new OnPageErrorListener() {
                     @Override
-                    public void onError(Throwable t) {
-                        Toast.makeText(PdfViewActivity.this, ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+                    public void onPageError(int page, Throwable t) {
+                        Log.d("Throwable",t.getMessage());
                     }
-                })
-                        .onPageError(new OnPageErrorListener() {
-                            @Override
-                            public void onPageError(int page, Throwable t) {
-                                Toast.makeText(PdfViewActivity.this, "خطأ في الصفحة"+page+" "+t.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .load();
-                binding.progressBar.setVisibility(View.GONE);
+                }).load();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                binding.progressBar.setVisibility(View.GONE);
+                Log.d("Exception",e.getMessage());
             }
         });
     }
+
     @Override
-    protected void onResume() {
-        super.onResume();
-//        try {
-////            checkFolder();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+    protected void onStart() {
+        super.onStart();
+        if (bookTitle.isEmpty() && bookTitle == null){
+            loadBookDetails();
+        }
+//        loadBookDetails();
     }
 }

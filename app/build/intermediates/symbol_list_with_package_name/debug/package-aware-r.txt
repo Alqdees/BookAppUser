@@ -1223,10 +1223,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color browser_actions_bg_grey
-color browser_actions_divider_color
-color browser_actions_text_color
-color browser_actions_title_color
 color btn
 color button_material_dark
 color button_material_light
@@ -1891,8 +1887,6 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
-dimen browser_actions_context_menu_max_width
-dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2527,27 +2521,19 @@ drawable ic_attach
 drawable ic_back
 drawable ic_baseline_lock_24
 drawable ic_books
-drawable ic_category
 drawable ic_clock_black_24dp
-drawable ic_delete_white
 drawable ic_down
 drawable ic_edit
-drawable ic_email
-drawable ic_favorite
-drawable ic_favorite_white
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
-drawable ic_more
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pdf
-drawable ic_person
-drawable ic_person2
 drawable ic_power
 drawable ic_save
 drawable ic_search
@@ -2571,7 +2557,6 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
-drawable mgr
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2681,8 +2666,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addCategory
-id addPdf
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2700,7 +2683,6 @@ id appbar
 id arc
 id asConfigured
 id async
-id attachment
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -2718,11 +2700,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id browser_actions_header_text
-id browser_actions_menu_item_icon
-id browser_actions_menu_item_text
-id browser_actions_menu_items
-id browser_actions_menu_view
 id btnLayout
 id buttonPanel
 id cache_measures
@@ -2730,7 +2707,6 @@ id callMeasure
 id cancel_action
 id cancel_button
 id carryVelocity
-id categoryRecyclerView
 id categoryTv
 id center
 id centerCrop
@@ -2780,8 +2756,6 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id description
-id descriptionEt
 id descriptionTv
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -2985,8 +2959,6 @@ id percent
 id pin
 id position
 id postLayout
-id power_btn
-id profileBtn
 id progressBar
 id progressBsr
 id progress_circular
@@ -3109,13 +3081,10 @@ id time
 id title
 id titleBook
 id titleDividerNoCustom
-id titleEt
-id titleTil
 id titleTv
 id title_template
 id toggle
 id toolBarRl
-id toolbar
 id toolbarRl
 id top
 id topPanel
@@ -3128,13 +3097,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvSubtitle
 id tv_title
 id unchecked
 id uniform
 id unlabeled
 id up
-id uploadBtn
 id useLogo
 id vertical_only
 id viewLabelTv
@@ -3251,17 +3218,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_dashboard
-layout activity_dashboard_admin
 layout activity_download
 layout activity_main
-layout activity_pdf_add
 layout activity_pdf_detail
 layout activity_pdf_list_admin
 layout activity_pdf_view
-layout activity_read_pdf
 layout activity_splash
-layout browser_actions_context_menu_page
-layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3279,7 +3241,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout downloadcards
-layout fragment_book_user
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3430,15 +3391,11 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string copy_toast_msg
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string fallback_menu_item_copy_link
-string fallback_menu_item_open_in_browser
-string fallback_menu_item_share_link
 string gcm_defaultSenderId
 string go_to_All_book
 string go_to_books_download
@@ -3805,6 +3762,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
@@ -4745,7 +4703,6 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
-xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

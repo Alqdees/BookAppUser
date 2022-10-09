@@ -1,14 +1,16 @@
 package com.alqdees.bookapp.Activitys;
 
+import static com.alqdees.bookapp.Constants.Constants.MAX_BYTES_PDF;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -21,23 +23,22 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import com.alqdees.bookapp.Constants.MyApplication;
-import com.alqdees.bookapp.R;
 import com.alqdees.bookapp.databinding.ActivityPdfDetailBinding;
-import com.google.firebase.auth.FirebaseAuth;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.Locale;
-import java.util.Objects;
 import com.alqdees.bookapp.BuildConfig;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class PdfDetailActivity extends AppCompatActivity {
 
@@ -58,6 +59,8 @@ public class PdfDetailActivity extends AppCompatActivity {
         application = new MyApplication();
         Intent intent = getIntent();
         bookId = intent.getStringExtra("bookId");
+        Log.d("bookId",bookId);
+        loadBookDetails();
 //        firebaseAuth = FirebaseAuth.getInstance();
 //        if (firebaseAuth.getCurrentUser() != null){
 //            checkIsFavorite();
@@ -79,8 +82,8 @@ public class PdfDetailActivity extends AppCompatActivity {
         });
 
 
-        loadBookDetails();
-        MyApplication.incrementBookViewCount(bookId);
+
+//        MyApplication.incrementBookViewCount(bookId);
 
         binding.downLoad.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.R)
@@ -117,20 +120,16 @@ public class PdfDetailActivity extends AppCompatActivity {
     private void checkFolder() throws IOException {
 
         File folder = new File(Environment.getExternalStorageDirectory() + "/" + "كتب مدرسية");
-        if (folder.exists()) {
-            if (checkFile())
-            {
+        if (folder.exists() && checkFile()) {
+
                 Toast.makeText(
                         PdfDetailActivity.this,
                         "هذا الكتاب موجود",
                         Toast.LENGTH_SHORT).show();
                 return;
-            }else {
-                downloadFile();
-            }
 
         }else {
-            downloadFile();
+            downloadBook();
         }
     }
 
@@ -148,11 +147,82 @@ public class PdfDetailActivity extends AppCompatActivity {
         }
         return isExists;
     }
+    public void downloadBook() throws IOException {
+        String name = bookTitle+ ".pdf";
 
-    private void downloadFile() throws IOException {
-//        MyApplication.downloadBook(PdfDetailActivity.this,bookId,bookTitle,bookUrl);
-        MyApplication.downloadBook(PdfDetailActivity.this,bookId,bookTitle,bookUrl);
+        ProgressDialog progressDialog = new ProgressDialog(PdfDetailActivity.this);
+
+        progressDialog.setTitle("انتظر..");
+
+        progressDialog.setMessage(" جاري التحميل... "+ name);
+
+        progressDialog.setCanceledOnTouchOutside(true);
+
+        progressDialog.show();
+
+
+        StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(bookUrl);
+
+
+        storageReference.getBytes(MAX_BYTES_PDF).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
+            @RequiresApi(api = Build.VERSION_CODES.R)
+
+            @Override
+            public void onSuccess(byte[] bytes) {
+
+                Toast.makeText(getApplicationContext(), "جاري التحميل...", Toast.LENGTH_SHORT).show();
+
+                saveDownloadBook(getApplicationContext(),progressDialog,bytes,name,bookId);
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                        progressDialog.dismiss();
+                        Log.d("ExceptionALL",e.getMessage());
+
+                        Toast.makeText(getApplicationContext(), "خطأ في التنزيل"+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+
     }
+
+
+        @RequiresApi(api = Build.VERSION_CODES.R)
+        private static void saveDownloadBook(
+                Context context, ProgressDialog progressDialog,
+                byte[] bytes, String name, String bookId)
+        {
+            try{
+                File folder = new File(Environment.getExternalStorageDirectory() + "/" + "كتب مدرسية");
+                if (!folder.exists()) {
+                    folder.mkdir();
+                }
+                String filePathAndName = folder.toString() + "/" + name;
+                FileOutputStream out = new FileOutputStream(filePathAndName);
+
+                out.write(bytes);
+
+                out.close();
+
+                Toast.makeText(context, "تم التحميل بنجاح...", Toast.LENGTH_LONG).show();
+
+                progressDialog.dismiss();
+
+
+            }catch (Exception e){
+
+                Toast.makeText(context, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
+
+                progressDialog.dismiss();
+
+            }
+
+        }
+
 
     private void permission() throws IOException {
 
@@ -195,7 +265,7 @@ public class PdfDetailActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 //                bookId = ""+snapshot.child("id").getValue();
-                 bookTitle = ""+snapshot.child("title").getValue();
+                bookTitle = ""+snapshot.child("title").getValue();
                 String description = ""+snapshot.child("description").getValue();
                 String categoryId = ""+snapshot.child("categoryId").getValue();
                 bookUrl = ""+snapshot.child("url").getValue();

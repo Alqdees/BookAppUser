@@ -1,9 +1,9 @@
 com.alqdees.bookapp-jetified-activity-1.5.1-0 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\040db24a2373515e64c1f38f99215ec1\transformed\jetified-activity-1.5.1\res
 com.alqdees.bookapp-jetified-startup-runtime-1.1.1-1 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\05f71149823c86c71478dbb7a0f203a5\transformed\jetified-startup-runtime-1.1.1\res
 com.alqdees.bookapp-media-1.0.0-2 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\1ca0464ff56afd3aa794b857d3c17a14\transformed\media-1.0.0\res
-com.alqdees.bookapp-browser-1.4.0-3 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\1ed45cd4201d867ba543f86aefac0d58\transformed\browser-1.4.0\res
-com.alqdees.bookapp-jetified-play-services-basement-18.1.0-4 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\23dca58a2df65b634d3a2c41467e9bac\transformed\jetified-play-services-basement-18.1.0\res
-com.alqdees.bookapp-jetified-core-ktx-1.8.0-5 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\26f41ce9d7c137df99e0b18da0dc61d0\transformed\jetified-core-ktx-1.8.0\res
+com.alqdees.bookapp-jetified-play-services-basement-18.1.0-3 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\23dca58a2df65b634d3a2c41467e9bac\transformed\jetified-play-services-basement-18.1.0\res
+com.alqdees.bookapp-jetified-core-ktx-1.8.0-4 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\26f41ce9d7c137df99e0b18da0dc61d0\transformed\jetified-core-ktx-1.8.0\res
+com.alqdees.bookapp-jetified-dexter-6.2.3-5 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\282635f76ed7be3a30b17157258b4b20\transformed\jetified-dexter-6.2.3\res
 com.alqdees.bookapp-core-1.8.0-6 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\2918a66d163dea0404f53e82d285c4d8\transformed\core-1.8.0\res
 com.alqdees.bookapp-jetified-lifecycle-process-2.4.1-7 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\3711d31ee8974149206cbb2d0f123ae1\transformed\jetified-lifecycle-process-2.4.1\res
 com.alqdees.bookapp-recyclerview-1.1.0-8 C:\Users\msi\.gradle\wrapper\dists\gradle-7.0.2-all\caches\transforms-3\49ec733aae324e4f50e190109026c740\transformed\recyclerview-1.1.0\res

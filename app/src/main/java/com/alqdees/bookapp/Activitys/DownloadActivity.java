@@ -39,13 +39,13 @@ public class DownloadActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler);
         recyclerView.hasFixedSize();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        getPermissions();
+
     }
 
     private void getPermissions() {
         requestPermission();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2 &&
-                    false == Environment.isExternalStorageManager()) {
+                    !Environment.isExternalStorageManager()) {
                 Uri uri = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
                 startActivity(new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, uri));
             } else if (ContextCompat.checkSelfPermission(
@@ -56,7 +56,6 @@ public class DownloadActivity extends AppCompatActivity {
             } else {
                 requestPermissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE);
             }
-
     }
 
 
@@ -75,9 +74,7 @@ public class DownloadActivity extends AppCompatActivity {
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
                 if (isGranted){
-
                         getAllBook();
-
                 }else {
                     Toast.makeText(DownloadActivity.this,
                             "يحتاج امكانية الوصول",
@@ -106,5 +103,11 @@ public class DownloadActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                 STORAGE_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getPermissions();
     }
 }

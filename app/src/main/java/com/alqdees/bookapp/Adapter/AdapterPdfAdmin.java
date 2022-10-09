@@ -4,36 +4,28 @@ import static com.alqdees.bookapp.Activitys.PdfDetailActivity.formatTimeStamp;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageButton;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.alqdees.bookapp.Activitys.PdfDetailActivity;
-
-import com.alqdees.bookapp.Filter.FilterPdfAdmin;
 import com.alqdees.bookapp.Model.ModelPdf;
 import com.alqdees.bookapp.Constants.MyApplication;
 import com.alqdees.bookapp.databinding.RowPdfAdminBinding;
-import com.github.barteksc.pdfviewer.PDFView;
-
 import java.util.ArrayList;
 
-public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.HolderPdfAdmin> implements Filterable {
+public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.HolderPdfAdmin>{
     private Context context;
     public ArrayList<ModelPdf> pdfArrayList,filterList;
     private RowPdfAdminBinding binding;
-    private FilterPdfAdmin filter;
+
     private ProgressDialog progressDialog;
 
     public AdapterPdfAdmin(Context context, ArrayList<ModelPdf> pdfArrayList) {
@@ -56,6 +48,7 @@ public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.Holder
     public void onBindViewHolder(@NonNull HolderPdfAdmin holder, int position) {
         ModelPdf modelPdf = pdfArrayList.get(position);
         String bookId = modelPdf.getId();
+        Log.e("BookId",bookId);
         String categoryId = modelPdf.getCategoryId();
         String title = modelPdf.getTitle();
         String description = modelPdf.getDescription();
@@ -119,13 +112,6 @@ public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.Holder
         return pdfArrayList.size();
     }
 
-    @Override
-    public Filter getFilter() {
-        if (filter == null){
-            filter = new FilterPdfAdmin(filterList,this);
-        }
-        return filter;
-    }
 
     class HolderPdfAdmin extends RecyclerView.ViewHolder{
 //        PDFView pdfViewers;

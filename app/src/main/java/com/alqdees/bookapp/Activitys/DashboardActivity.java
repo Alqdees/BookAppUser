@@ -1,20 +1,12 @@
 package com.alqdees.bookapp.Activitys;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.os.Bundle;
 import android.widget.Toast;
-
 import com.alqdees.bookapp.Adapter.AdapterCategory;
-
 import com.alqdees.bookapp.Model.ModelCategory;
-
 import com.alqdees.bookapp.databinding.ActivityDashboardBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

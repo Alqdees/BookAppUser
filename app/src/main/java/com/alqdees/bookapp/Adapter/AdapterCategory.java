@@ -1,39 +1,26 @@
 package com.alqdees.bookapp.Adapter;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.alqdees.bookapp.Activitys.PdfListAdminActivity;
-import com.alqdees.bookapp.Filter.FilterCategory;
 import com.alqdees.bookapp.Model.ModelCategory;
 import com.alqdees.bookapp.databinding.RowCategoryBinding;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.HolderCategory> implements Filterable {
+public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.HolderCategory>{
     private Context context;
     public ArrayList<ModelCategory> categoryArrayList,filterList;
     private RowCategoryBinding binding;
     private HashMap<String, String> values;
-    private FilterCategory filter;
+
 
 
     public AdapterCategory(Context context, ArrayList<ModelCategory> categoryArrayList) {
@@ -77,13 +64,6 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
         return categoryArrayList.size();
     }
 
-    @Override
-    public Filter getFilter() {
-        if (filter == null ) {
-            filter = new FilterCategory(filterList,this);
-        }
-        return filter;
-    }
 
     class HolderCategory extends RecyclerView.ViewHolder{
 

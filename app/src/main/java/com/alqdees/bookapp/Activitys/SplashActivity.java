@@ -3,11 +3,9 @@ package com.alqdees.bookapp.Activitys;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.utils.widget.MotionButton;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.alqdees.bookapp.R;
 
 
@@ -29,10 +27,14 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(new Intent(SplashActivity.this,DashboardActivity.class));
             }
         });
+
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SplashActivity.this,DownloadActivity.class));
+                startActivity(new Intent(
+                        SplashActivity.this,
+                        DownloadActivity.class
+                ));
             }
         });
 
