@@ -2516,13 +2516,9 @@ int drawable design_snackbar_background 0x7f07007c
 int drawable edit 0x7f07007d
 int drawable googleg_disabled_color_18 0x7f07007e
 int drawable googleg_standard_color_18 0x7f07007f
-int drawable ic_attach 0x7f070080
 int drawable ic_back 0x7f070081
-int drawable ic_baseline_lock_24 0x7f070082
 int drawable ic_books 0x7f070083
 int drawable ic_clock_black_24dp 0x7f070084
-int drawable ic_down 0x7f070085
-int drawable ic_edit 0x7f070086
 int drawable ic_keyboard_black_24dp 0x7f070087
 int drawable ic_launcher_foreground 0x7f070088
 int drawable ic_m3_chip_check 0x7f070089
@@ -2532,7 +2528,6 @@ int drawable ic_mtrl_checked_circle 0x7f07008c
 int drawable ic_mtrl_chip_checked_black 0x7f07008d
 int drawable ic_mtrl_chip_checked_circle 0x7f07008e
 int drawable ic_mtrl_chip_close_circle 0x7f07008f
-int drawable ic_pdf 0x7f070090
 int drawable ic_power 0x7f070091
 int drawable ic_save 0x7f070092
 int drawable ic_search 0x7f070093
@@ -2595,7 +2590,6 @@ int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
-int id DownloadLabelTv 0x7f080004
 int id FUNCTION 0x7f080005
 int id META 0x7f080006
 int id NO_DEBUG 0x7f080007
@@ -2770,7 +2764,6 @@ int id disablePostScroll 0x7f0800af
 int id disableScroll 0x7f0800b0
 int id disjoint 0x7f0800b1
 int id downLoad 0x7f0800b2
-int id downloadTv 0x7f0800b3
 int id dragAnticlockwise 0x7f0800b4
 int id dragClockwise 0x7f0800b5
 int id dragDown 0x7f0800b6
@@ -3103,8 +3096,6 @@ int id unlabeled 0x7f0801fc
 int id up 0x7f0801fd
 int id useLogo 0x7f0801fe
 int id vertical_only 0x7f0801ff
-int id viewLabelTv 0x7f080200
-int id viewTv 0x7f080201
 int id view_offset_helper 0x7f080202
 int id view_transition 0x7f080203
 int id view_tree_lifecycle_owner 0x7f080204

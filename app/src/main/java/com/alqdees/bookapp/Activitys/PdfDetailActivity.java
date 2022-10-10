@@ -48,7 +48,7 @@ public class PdfDetailActivity extends AppCompatActivity {
     boolean isInMyFavorite = false;
     private MyApplication application;
 //    private FirebaseAuth firebaseAuth;
-    private String bookId;
+    private String bookId,pdfUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,7 @@ public class PdfDetailActivity extends AppCompatActivity {
         application = new MyApplication();
         Intent intent = getIntent();
         bookId = intent.getStringExtra("bookId");
+        pdfUrl = intent.getStringExtra("pdfUrl");
         Log.d("bookId",bookId);
         loadBookDetails();
 //        firebaseAuth = FirebaseAuth.getInstance();
@@ -71,6 +72,7 @@ public class PdfDetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(PdfDetailActivity.this,PdfViewActivity.class);
                 intent.putExtra("bookId",bookId);
                 intent.putExtra("bookTitle",bookTitle);
+                intent.putExtra("pdfUrl",pdfUrl);
                 startActivity(intent);
             }
         });
@@ -264,31 +266,15 @@ public class PdfDetailActivity extends AppCompatActivity {
         ref.child(bookId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                bookId = ""+snapshot.child("id").getValue();
+
                 bookTitle = ""+snapshot.child("title").getValue();
                 String description = ""+snapshot.child("description").getValue();
-                String categoryId = ""+snapshot.child("categoryId").getValue();
                 bookUrl = ""+snapshot.child("url").getValue();
                 String timestamp = ""+snapshot.child("timestamp").getValue();
-                String viewsCount = ""+ snapshot.child("viewCount").getValue();
-                String downloadsCount = ""+snapshot.child("downloadsCount").getValue();
-//                binding.downLoad.setVisibility(View.VISIBLE);
 
                 String date = formatTimeStamp(Long.parseLong(timestamp));
-
-//                MyApplication.loadCategory(""+categoryId, binding.categoryTv);
-
-//                MyApplication.loadPdfFromUrlSinglePage(""+bookUrl,binding.pdfViewer,binding.progressBar,binding.pageTv);
-//                loadPdfSize(bookUrl,binding.sizeTv);
-//                  loadPdfSize(""+url,binding.sizeTv);
-//                MyApplication.loadPdfSize(""+bookUrl,binding.sizeTv);
-
-//
-//                binding.sizeTv.setText(bookUrl);
                binding.titleTv.setText(bookTitle);
              binding.descriptionTv.setText(description);
-                binding.viewTv.setText(viewsCount);
-                binding.downloadTv.setText(downloadsCount);
             binding.dateTv.setText(date);
             }
 

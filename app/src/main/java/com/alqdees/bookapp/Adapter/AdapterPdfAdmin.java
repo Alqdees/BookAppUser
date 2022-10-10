@@ -9,9 +9,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -48,14 +45,13 @@ public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.Holder
     public void onBindViewHolder(@NonNull HolderPdfAdmin holder, int position) {
         ModelPdf modelPdf = pdfArrayList.get(position);
         String bookId = modelPdf.getId();
-        Log.e("BookId",bookId);
         String categoryId = modelPdf.getCategoryId();
         String title = modelPdf.getTitle();
         String description = modelPdf.getDescription();
         String pdfUrl = modelPdf.getUrl();
         String timestamp = modelPdf.getTimestamp();
         /*-----اعطاء الوقت الدقيق-----*/
-        String format = MyApplication.formatTimestamp(Long.parseLong(timestamp));
+//        String format = MyApplication.formatTimestamp(Long.parseLong(timestamp));
 //        holder.dateTv.setText(format);
 
         holder.titleTv.setText(title);
@@ -75,6 +71,7 @@ public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.Holder
             public void onClick(View view) {
                 Intent intent = new Intent(context, PdfDetailActivity.class);
                 intent.putExtra("bookId",bookId);
+                intent.putExtra("pdfUrl",pdfUrl);
                 context.startActivity(intent);
             }
         });
@@ -117,7 +114,7 @@ public class AdapterPdfAdmin extends RecyclerView.Adapter<AdapterPdfAdmin.Holder
 //        PDFView pdfViewers;
 //        ProgressBar progressBar;
         TextView titleTv,descriptionTv,dateTv;
-        ImageButton moreBtn;
+//        ImageButton moreBtn;
 
 
         public HolderPdfAdmin(@NonNull View itemView) {

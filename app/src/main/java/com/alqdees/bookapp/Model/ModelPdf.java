@@ -1,49 +1,38 @@
 package com.alqdees.bookapp.Model;
 
 public class ModelPdf {
-    private String uid,
+    private String
             id,
             title,
             description,
             categoryId,
             url,
-            timestamp,
-            viewsCount,
-            downloadsCount;
+            timestamp;
 
     public ModelPdf() {
 
 
     }
 
-    public ModelPdf(String uid,
+    public ModelPdf(
                     String id,
                     String title,
                     String description,
                     String categoryId,
                     String url,
-                    String timestamp,
-                    String viewsCount,
-                    String downloadsCount
+                    String timestamp
     ) {
-        this.uid = uid;
         this.id = id;
         this.title = title;
         this.description = description;
         this.categoryId = categoryId;
         this.url = url;
         this.timestamp = timestamp;
-        this.viewsCount = viewsCount;
-        this.downloadsCount = downloadsCount;
+
     }
 
-    public String getUid() {
-        return uid;
-    }
 
-    public void setUid(String uid) {
-        this.uid = uid;
-    }
+
 
     public String getId() {
         return id;
@@ -93,19 +82,4 @@ public class ModelPdf {
         this.timestamp = timestamp;
     }
 
-    public String getViewsCount() {
-        return viewsCount;
-    }
-
-    public void setViewsCount(String viewsCount) {
-        this.viewsCount = viewsCount;
-    }
-
-    public String getDownloadsCount() {
-        return downloadsCount;
-    }
-
-    public void setDownloadsCount(String downloadsCount) {
-        this.downloadsCount = downloadsCount;
-    }
 }

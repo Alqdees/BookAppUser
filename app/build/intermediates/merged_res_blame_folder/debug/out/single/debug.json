@@ -1,206 +1,210 @@
 [
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_download.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_download.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_save.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_baseline_lock_24.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_baseline_lock_24.xml"
-    },
-    {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_down.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_down.xml"
     },
     {
         "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_pdf_detail.xml.flat",
         "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_detail.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_main.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_main.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_button.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\button.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_row_category.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/row_category.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_pdf.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_pdf.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_row_pdf_admin.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/row_pdf_admin.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_back.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_pdf_list_admin.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_list_admin.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_shape_button.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/shape_button.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_tab_background_selected.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\tab_background_selected.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_shape_profile.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/shape_profile.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_pdf_view.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_view.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_shape_button3.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\shape_button3.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_shape_button3.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/shape_button3.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_books.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_books.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_tab_selector.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\tab_selector.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_logo.jpg.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/logo.jpg"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_pdf.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_pdf.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_tab_selector.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/tab_selector.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_pdf_view.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_pdf_view.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_edit.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\edit.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_splash.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_pdf_detail.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_pdf_detail.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_power.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_power.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_tab_background_unselect.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/tab_background_unselect.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_attach.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_attach.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_image.jpg.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/image.jpg"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_toolbar2.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\toolbar2.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_logo.jpg.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\logo.jpg"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_dashboard.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_activity_dashboard.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/activity_dashboard.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_row_pdf_admin.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\row_pdf_admin.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_attach.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_attach.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_power.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_power.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_search.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_search.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_books.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_books.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_save.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_save.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_image.jpg.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\image.jpg"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_down.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_down.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_toolbar2.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/toolbar2.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_toolbar1.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\toolbar1.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_edit.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_edit.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_downloadcards.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\downloadcards.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_row_pdf_user.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/row_pdf_user.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_pdf_list_admin.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_pdf_list_admin.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/layout_downloadcards.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/layout/downloadcards.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.alqdees.bookapp-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_row_pdf_user.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\row_pdf_user.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_shape_button.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\shape_button.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_ic_back.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/ic_back.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_baseline_lock_24.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_button.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/button.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_tab_background_selected.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/tab_background_selected.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_shape_profile.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\shape_profile.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_edit.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/edit.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-pngs-31:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/drawable_toolbar1.xml.flat",
-        "source": "com.alqdees.bookapp-main-38:/drawable/toolbar1.xml"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_activity_download.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\activity_download.xml"
     },
     {
-        "merged": "com.alqdees.bookapp-merged_res-36:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.alqdees.bookapp-main-38:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_tab_background_unselect.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\tab_background_unselect.xml"
+    },
+    {
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-merged_res-36:\\layout_row_category.xml.flat",
+        "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\daemon\\7.3.3\\com.alqdees.bookapp-main-38:\\layout\\row_category.xml"
     }
 ]

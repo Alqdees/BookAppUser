@@ -24,9 +24,6 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView DownloadLabelTv;
-
-  @NonNull
   public final ImageButton backBtn;
 
   @NonNull
@@ -45,9 +42,6 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
   public final Button downLoad;
 
   @NonNull
-  public final TextView downloadTv;
-
-  @NonNull
   public final Button readPdf;
 
   @NonNull
@@ -62,35 +56,23 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
   @NonNull
   public final RelativeLayout toolbarRl;
 
-  @NonNull
-  public final TextView viewLabelTv;
-
-  @NonNull
-  public final TextView viewTv;
-
-  private ActivityPdfDetailBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView DownloadLabelTv, @NonNull ImageButton backBtn,
+  private ActivityPdfDetailBinding(@NonNull RelativeLayout rootView, @NonNull ImageButton backBtn,
       @NonNull LinearLayout btnLayout, @NonNull TextView dateLabelTv, @NonNull TextView dateTv,
-      @NonNull TextView descriptionTv, @NonNull Button downLoad, @NonNull TextView downloadTv,
-      @NonNull Button readPdf, @NonNull ScrollView scroll, @NonNull RelativeLayout table,
-      @NonNull TextView titleTv, @NonNull RelativeLayout toolbarRl, @NonNull TextView viewLabelTv,
-      @NonNull TextView viewTv) {
+      @NonNull TextView descriptionTv, @NonNull Button downLoad, @NonNull Button readPdf,
+      @NonNull ScrollView scroll, @NonNull RelativeLayout table, @NonNull TextView titleTv,
+      @NonNull RelativeLayout toolbarRl) {
     this.rootView = rootView;
-    this.DownloadLabelTv = DownloadLabelTv;
     this.backBtn = backBtn;
     this.btnLayout = btnLayout;
     this.dateLabelTv = dateLabelTv;
     this.dateTv = dateTv;
     this.descriptionTv = descriptionTv;
     this.downLoad = downLoad;
-    this.downloadTv = downloadTv;
     this.readPdf = readPdf;
     this.scroll = scroll;
     this.table = table;
     this.titleTv = titleTv;
     this.toolbarRl = toolbarRl;
-    this.viewLabelTv = viewLabelTv;
-    this.viewTv = viewTv;
   }
 
   @Override
@@ -120,12 +102,6 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.DownloadLabelTv;
-      TextView DownloadLabelTv = ViewBindings.findChildViewById(rootView, id);
-      if (DownloadLabelTv == null) {
-        break missingId;
-      }
-
       id = R.id.backBtn;
       ImageButton backBtn = ViewBindings.findChildViewById(rootView, id);
       if (backBtn == null) {
@@ -162,12 +138,6 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.downloadTv;
-      TextView downloadTv = ViewBindings.findChildViewById(rootView, id);
-      if (downloadTv == null) {
-        break missingId;
-      }
-
       id = R.id.readPdf;
       Button readPdf = ViewBindings.findChildViewById(rootView, id);
       if (readPdf == null) {
@@ -198,21 +168,8 @@ public final class ActivityPdfDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.viewLabelTv;
-      TextView viewLabelTv = ViewBindings.findChildViewById(rootView, id);
-      if (viewLabelTv == null) {
-        break missingId;
-      }
-
-      id = R.id.viewTv;
-      TextView viewTv = ViewBindings.findChildViewById(rootView, id);
-      if (viewTv == null) {
-        break missingId;
-      }
-
-      return new ActivityPdfDetailBinding((RelativeLayout) rootView, DownloadLabelTv, backBtn,
-          btnLayout, dateLabelTv, dateTv, descriptionTv, downLoad, downloadTv, readPdf, scroll,
-          table, titleTv, toolbarRl, viewLabelTv, viewTv);
+      return new ActivityPdfDetailBinding((RelativeLayout) rootView, backBtn, btnLayout,
+          dateLabelTv, dateTv, descriptionTv, downLoad, readPdf, scroll, table, titleTv, toolbarRl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

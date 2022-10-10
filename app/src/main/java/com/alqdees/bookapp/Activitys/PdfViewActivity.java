@@ -16,11 +16,6 @@ import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
 import com.github.barteksc.pdfviewer.listener.OnPageErrorListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.karumi.dexter.Dexter;
@@ -36,7 +31,7 @@ import java.net.MalformedURLException;
 
 public class PdfViewActivity extends AppCompatActivity {
     private ActivityPdfViewBinding binding;
-    private String pdfId,bookTitle;
+    private String pdfId,bookTitle,pdfUrl;
     private int currentPage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +43,9 @@ public class PdfViewActivity extends AppCompatActivity {
         Intent intent = getIntent();
         pdfId = intent.getStringExtra("bookId");
         bookTitle = intent.getStringExtra("bookTitle");
-//        loadBookDetails();
+        pdfUrl = intent.getStringExtra("pdfUrl");
+
+//        Log.d("pdfURL",pdfUrl);
 
         binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,11 +89,11 @@ public class PdfViewActivity extends AppCompatActivity {
                     Log.d("GETNANE1",checkFile().toString());
                     readPdf(checkFile());
                 }else {
-                    loadBookDetails();
+                    loadBookFromUrl();;
                 }
 
         }else {
-            loadBookDetails();
+            loadBookFromUrl();;
         }
     }
     private File checkFile() throws IOException {
@@ -133,7 +130,7 @@ public class PdfViewActivity extends AppCompatActivity {
             }).load();
     }
 
-    private void loadBookDetails() {
+   /* private void loadBookDetails() {
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Books");
         ref.child(pdfId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -151,8 +148,9 @@ public class PdfViewActivity extends AppCompatActivity {
 
             }
         });
-    }
-    private void loadBookFromUrl(String pdfUrl) throws MalformedURLException {
+    }*/
+    private void loadBookFromUrl() throws MalformedURLException {
+
         StorageReference ref = FirebaseStorage.getInstance().getReferenceFromUrl(pdfUrl);
         ref.getBytes(Constants.MAX_BYTES_PDF).addOnSuccessListener(new OnSuccessListener<byte[]>() {
             @Override
@@ -179,12 +177,22 @@ public class PdfViewActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (bookTitle.isEmpty() && bookTitle == null){
-            loadBookDetails();
-        }
-//        loadBookDetails();
-    }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (bookTitle.isEmpty() && bookTitle == null){
+//            loadBookDetails();
+////            System.exit(0);
+//        }
+////        loadBookDetails();
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        if (bookTitle.isEmpty() && bookTitle == null){
+//            loadBookDetails();
+////            System.exit(0);
+//        }
+//    }
 }

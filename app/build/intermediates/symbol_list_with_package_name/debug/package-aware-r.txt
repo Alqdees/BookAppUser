@@ -2517,13 +2517,9 @@ drawable design_snackbar_background
 drawable edit
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable ic_attach
 drawable ic_back
-drawable ic_baseline_lock_24
 drawable ic_books
 drawable ic_clock_black_24dp
-drawable ic_down
-drawable ic_edit
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_foreground
 drawable ic_m3_chip_check
@@ -2533,7 +2529,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_pdf
 drawable ic_power
 drawable ic_save
 drawable ic_search
@@ -2596,7 +2591,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id DownloadLabelTv
 id FUNCTION
 id META
 id NO_DEBUG
@@ -2771,7 +2765,6 @@ id disablePostScroll
 id disableScroll
 id disjoint
 id downLoad
-id downloadTv
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3104,8 +3097,6 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
-id viewLabelTv
-id viewTv
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
