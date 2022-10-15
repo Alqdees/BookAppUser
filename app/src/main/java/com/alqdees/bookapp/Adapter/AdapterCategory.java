@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,13 +12,12 @@ import com.alqdees.bookapp.Activitys.PdfListAdminActivity;
 import com.alqdees.bookapp.Model.ModelCategory;
 import com.alqdees.bookapp.databinding.RowCategoryBinding;
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.HolderCategory>{
     private Context context;
     public ArrayList<ModelCategory> categoryArrayList,filterList;
     private RowCategoryBinding binding;
-    private HashMap<String, String> values;
 
 
 
@@ -41,8 +39,8 @@ public class AdapterCategory extends RecyclerView.Adapter<AdapterCategory.Holder
         ModelCategory model = categoryArrayList.get(position);
         String id = model.getId();
         String category = model.getCategory();
-        String uid = model.getUid();
-        String timestamp = model.getTimestamp();
+//        String uid = model.getUid();
+//        String timestamp = model.getTimestamp();
 
         holder.catTv.setText(category);
 

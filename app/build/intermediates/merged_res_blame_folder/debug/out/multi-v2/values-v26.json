@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.alqdees.bookapp-mergeDebugResources-34:/values-v26/values-v26.xml",
+            "outputFile": "com.alqdees.bookapp-mergeDebugResources-35:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\52ba9dcd7a72603cdc3452611ca20a57\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

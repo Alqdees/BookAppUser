@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.alqdees.bookapp-mergeDebugResources-34:/values-v23/values-v23.xml",
+            "outputFile": "com.alqdees.bookapp-mergeDebugResources-35:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\a628b047a528adad8d38afe27c2e2503\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\52ba9dcd7a72603cdc3452611ca20a57\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\9ec7308c41b824726f2a6683edb04e60\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\440957a4d91a9d9b26070d33e774f50d\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\ce02f3f7664ba9eb629fc57f47e65fc3\\transformed\\material-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\e29eeb0f7ea89f62f060c533c0944ff6\\transformed\\material-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

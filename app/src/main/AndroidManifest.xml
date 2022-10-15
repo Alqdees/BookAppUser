@@ -41,9 +41,6 @@
             android:name=".Activitys.DashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".Activitys.MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activitys.SplashActivity"
             android:exported="true" >
             <intent-filter>

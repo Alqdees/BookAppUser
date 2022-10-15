@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.alqdees.bookapp-mergeReleaseResources-35:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\52ba9dcd7a72603cdc3452611ca20a57\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

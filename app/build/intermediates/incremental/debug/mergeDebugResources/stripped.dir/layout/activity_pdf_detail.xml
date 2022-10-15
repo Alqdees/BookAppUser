@@ -29,10 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/somar"
             android:text="تفاصيل الكتاب"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
@@ -62,6 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/gray3"
+                    android:fontFamily="@font/somar"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textSize="25sp" />
@@ -73,6 +74,20 @@
                     <TableRow>
 
                         <TextView
+                            android:id="@+id/dateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:textAlignment="textStart"
+                            android:background="@color/gray3"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:fontFamily="@font/somar"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <TextView
                             android:id="@+id/dateLabelTv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -80,20 +95,9 @@
                             android:background="@color/gray3"
                             android:paddingStart="5dp"
                             android:text=": التاريخ"
+                            android:fontFamily="@font/somar"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/dateTv"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
-                            android:layout_weight="1"
-                            android:background="@color/gray3"
-                            android:paddingStart="5dp"
-                            android:paddingEnd="5dp"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="22sp" />
                     </TableRow>
 
                 </TableLayout>
@@ -135,8 +139,9 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/ic_books"
             android:text="قراءةالكتاب"
+            android:fontFamily="@font/somar"
             android:textColor="@color/btn"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <Button
@@ -148,8 +153,9 @@
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/ic_save"
             android:text="تنزيل الكتاب"
+            android:fontFamily="@font/somar"
             android:textColor="@color/btn"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
     </LinearLayout>

@@ -60,12 +60,7 @@ public class PdfDetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         bookId = intent.getStringExtra("bookId");
         pdfUrl = intent.getStringExtra("pdfUrl");
-        Log.d("bookId",bookId);
-        loadBookDetails();
-//        firebaseAuth = FirebaseAuth.getInstance();
-//        if (firebaseAuth.getCurrentUser() != null){
-//            checkIsFavorite();
-//        }
+
         binding.readPdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -184,9 +179,9 @@ public class PdfDetailActivity extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
 
                         progressDialog.dismiss();
-                        Log.d("ExceptionALL",e.getMessage());
 
-                        Toast.makeText(getApplicationContext(), "خطأ في التنزيل"+e.getMessage(), Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -256,13 +251,15 @@ public class PdfDetailActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }else {
-                    Toast.makeText(PdfDetailActivity.this, "يحتاج امكانية الوصول", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PdfDetailActivity.this, "تحتاج الوصول للذاكرة", Toast.LENGTH_SHORT).show();
                 }
             });
 
     private void loadBookDetails() {
-
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Books");
+        if (bookId == null){
+            return;
+        }
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Book");
         ref.child(bookId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -281,6 +278,8 @@ public class PdfDetailActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+                Toast.makeText(PdfDetailActivity.this, error.getMessage(),
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -349,4 +348,10 @@ public class PdfDetailActivity extends AppCompatActivity {
                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                 STORAGE_REQUEST_CODE);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadBookDetails();
     }
+}

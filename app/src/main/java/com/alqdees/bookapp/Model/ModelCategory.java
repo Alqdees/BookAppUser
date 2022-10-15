@@ -3,16 +3,15 @@ package com.alqdees.bookapp.Model;
 import java.util.HashMap;
 
 public class ModelCategory {
-    String id, category, uid,timestamp;
+    String id, category,timestamp;
 
     public ModelCategory() {
 
     }
 
-    public ModelCategory(String id, String category, String uid, String timestamp) {
+    public ModelCategory(String id, String category, String timestamp) {
         this.id = id;
         this.category = category;
-        this.uid = uid;
         this.timestamp = timestamp;
     }
 
@@ -30,14 +29,6 @@ public class ModelCategory {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public String getUid() {
-        return uid;
-    }
-
-    public void setUid(String uid) {
-        this.uid = uid;
     }
 
     public String getTimestamp() {

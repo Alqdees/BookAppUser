@@ -32,7 +32,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void setupViewPagerAdapter(){
 
                 categoryArrayList = new ArrayList<>();
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Categories");
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Category");
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

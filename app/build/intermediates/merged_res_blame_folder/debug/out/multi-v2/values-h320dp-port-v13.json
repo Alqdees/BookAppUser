@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.alqdees.bookapp-mergeDebugResources-34:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.alqdees.bookapp-mergeDebugResources-35:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\ce02f3f7664ba9eb629fc57f47e65fc3\\transformed\\material-1.6.1\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\msi\\.gradle\\wrapper\\dists\\gradle-7.0.2-all\\caches\\transforms-3\\e29eeb0f7ea89f62f060c533c0944ff6\\transformed\\material-1.6.1\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -3,18 +3,23 @@ package com.alqdees.bookapp.Activitys;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.documentfile.provider.DocumentFile;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.DocumentsContract;
 import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
@@ -22,6 +27,9 @@ import com.alqdees.bookapp.Adapter.AdapterDownload;
 import com.alqdees.bookapp.BuildConfig;
 import com.alqdees.bookapp.R;
 import java.io.File;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
 
 
@@ -30,18 +38,37 @@ public class DownloadActivity extends AppCompatActivity {
     private static final int STORAGE_REQUEST_CODE = 101;
     private RecyclerView recyclerView;
     private AdapterDownload adapterDownload;
+    private ArrayList<File> arrayList;
+    private File [] files;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download);
-
+//        files = new File[]{};
+//         arrayList = new ArrayList<>();
+//        arrayList.addAll(Arrays.asList(files));
+//        arrayList.clear();
         recyclerView = findViewById(R.id.recycler);
         recyclerView.hasFixedSize();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        Log.d("OnCreate","Created");
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (files != null){
+            return;
+        }else {
+            getPermissions();
+        }
+
+        Log.d("OnStart","OnStart");
+//        arrayList.clear();
+    }
     private void getPermissions() {
         requestPermission();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2 &&
@@ -53,24 +80,33 @@ public class DownloadActivity extends AppCompatActivity {
                     Manifest.permission.READ_EXTERNAL_STORAGE) ==
                     PackageManager.PERMISSION_GRANTED) {
                 getAllBook();
+
             } else {
                 requestPermissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE);
             }
     }
 
-
-    private void getAllBook() {
+    @SuppressLint("NotifyDataSetChanged")
+    private synchronized void getAllBook() {
         String Path = Environment.getExternalStorageDirectory() + "/" + "كتب مدرسية";
         File file = new File(Path);
-        File[] files = file.listFiles();
-        for (int i = 0; i< Objects.requireNonNull(files).length; i++)
-        {
-            files[i].getName();
-        }
-        adapterDownload = new AdapterDownload(files,DownloadActivity.this);
-        recyclerView.setAdapter(adapterDownload);
+        if (!file.exists()){
+            Toast.makeText(this, "لاتوجد كتب..", Toast.LENGTH_LONG).show();
+        }else {
+            files = file.listFiles();
+            assert files != null;
+            for (File f : files) {
+                    f.getName();
+                }
+            adapterDownload = new AdapterDownload(files, DownloadActivity.this);
+            recyclerView.setAdapter(adapterDownload);
+            adapterDownload.notifyDataSetChanged();
 
+        }
     }
+
+
+
     private final ActivityResultLauncher<String> requestPermissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
                 if (isGranted){
@@ -90,10 +126,10 @@ public class DownloadActivity extends AppCompatActivity {
                     try {
                         getAllBook();
                     } catch (Exception e) {
-                        Log.d("" + e.getMessage(), "GRANTED");
+                        Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(this, "نحتاج صلاحيات للذاكرة", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "نحتاج صلاحيات الوصول للذاكرة", Toast.LENGTH_LONG).show();
                 }
             }
         }
@@ -105,9 +141,11 @@ public class DownloadActivity extends AppCompatActivity {
                 STORAGE_REQUEST_CODE);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        getPermissions();
-    }
+
+
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        arrayList.clear();
+//    }
 }

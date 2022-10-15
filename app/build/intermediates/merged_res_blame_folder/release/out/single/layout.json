@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_pdf_list_admin.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_list_admin.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/row_category.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/row_category.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_pdf_view.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_view.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_splash.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/row_pdf_admin.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/row_pdf_admin.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/downloadcards.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/downloadcards.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_dashboard.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_pdf_detail.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_pdf_detail.xml"
+    },
+    {
+        "merged": "com.alqdees.bookapp-mergeReleaseResources-36:/layout/activity_download.xml",
+        "source": "com.alqdees.bookapp-main-38:/layout/activity_download.xml"
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.alqdees.bookapp-mergeReleaseResources-35:/values-ar-rIQ/values-ar-rIQ.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\msi\\StudioProjects\\BookApp\\app\\src\\main\\res\\values-ar-rIQ\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "42",
+                        "endOffsets": "95"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        }
+    ]
+}
