@@ -4,7 +4,6 @@ package com.alqdees.bookapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,18 +21,14 @@ public final class DownloadcardsBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final ImageButton delete;
-
-  @NonNull
   public final PDFView pdfViewer;
 
   @NonNull
   public final TextView titleTv;
 
-  private DownloadcardsBinding(@NonNull CardView rootView, @NonNull ImageButton delete,
-      @NonNull PDFView pdfViewer, @NonNull TextView titleTv) {
+  private DownloadcardsBinding(@NonNull CardView rootView, @NonNull PDFView pdfViewer,
+      @NonNull TextView titleTv) {
     this.rootView = rootView;
-    this.delete = delete;
     this.pdfViewer = pdfViewer;
     this.titleTv = titleTv;
   }
@@ -65,12 +60,6 @@ public final class DownloadcardsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.delete;
-      ImageButton delete = ViewBindings.findChildViewById(rootView, id);
-      if (delete == null) {
-        break missingId;
-      }
-
       id = R.id.pdfViewer;
       PDFView pdfViewer = ViewBindings.findChildViewById(rootView, id);
       if (pdfViewer == null) {
@@ -83,7 +72,7 @@ public final class DownloadcardsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DownloadcardsBinding((CardView) rootView, delete, pdfViewer, titleTv);
+      return new DownloadcardsBinding((CardView) rootView, pdfViewer, titleTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

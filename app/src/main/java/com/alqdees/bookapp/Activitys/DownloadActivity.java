@@ -3,23 +3,19 @@ package com.alqdees.bookapp.Activitys;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.documentfile.provider.DocumentFile;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.DocumentsContract;
 import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
@@ -27,10 +23,6 @@ import com.alqdees.bookapp.Adapter.AdapterDownload;
 import com.alqdees.bookapp.BuildConfig;
 import com.alqdees.bookapp.R;
 import java.io.File;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
 
 
 public class DownloadActivity extends AppCompatActivity {
@@ -38,7 +30,6 @@ public class DownloadActivity extends AppCompatActivity {
     private static final int STORAGE_REQUEST_CODE = 101;
     private RecyclerView recyclerView;
     private AdapterDownload adapterDownload;
-    private ArrayList<File> arrayList;
     private File [] files;
 
 
